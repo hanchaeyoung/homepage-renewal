@@ -17,6 +17,16 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            #product_intro a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .mt-5 {
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -72,39 +82,49 @@
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img src="/assets/img/d-ups.png"></div>
-                            <h3 class="h4 mb-2">디지털 UPS</h3>
-                            <!-- <p class="text-muted mb-0">무정전 전원 장치</p> -->
-                        </div>
+                        <a href="d-ups.html">
+                            <div class="mt-5">
+                                <div class="mb-2"><img src="/assets/img/d-ups.png"></div>
+                                <h3 class="h4 mb-2">디지털 UPS</h3>
+                                <!-- <p class="text-muted mb-0">무정전 전원 장치</p> -->
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img src="/assets/img/r-ups.png"></div>
-                            <h3 class="h4 mb-2">렉장비용 UPS</h3>
-                            <!-- <p class="text-muted mb-0">무정전 전원 장치</p> -->
-                        </div>
+                        <a href="r-ups.html">
+                            <div class="mt-5">
+                                <div class="mb-2"><img src="/assets/img/r-ups.png"></div>
+                                <h3 class="h4 mb-2">렉장비용 UPS</h3>
+                                <!-- <p class="text-muted mb-0">무정전 전원 장치</p> -->
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img src="/assets/img/HFU.PNG"></div>
-                            <h3 class="h4 mb-2">HFU</h3>
-                            <!-- <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p> -->
-                        </div>
+                        <a href="hfu.html">
+                            <div class="mt-5">
+                                <div class="mb-2"><img src="/assets/img/HFU.PNG"></div>
+                                <h3 class="h4 mb-2">HFU</h3>
+                                <!-- <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p> -->
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img src="/assets/img/AIU-N.PNG"></div>
-                            <h3 class="h4 mb-2">AIU-N</h3>
-                            <!-- <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
-                        </div>
+                        <a href="aiu-n.html">
+                            <div class="mt-5">
+                                <div class="mb-2"><img src="/assets/img/AIU-N.PNG"></div>
+                                <h3 class="h4 mb-2">AIU-N</h3>
+                                <!-- <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><img src="/assets/img/AIU.PNG"></div>
-                            <h3 class="h4 mb-2">AIU</h3>
-                            <!-- <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
-                        </div>
+                        <a href="aiu.html">
+                            <div class="mt-5">
+                                <div class="mb-2"><img src="/assets/img/AIU.PNG"></div>
+                                <h3 class="h4 mb-2">AIU</h3>
+                                <!-- <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -116,10 +136,10 @@
                 <h2 class="text-center mt-0">고객지원</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
+                    <div style="height: 30px;"></div>
                     <div class="table-responsive" style="text-align: center;">
-                        <br><br>
                         <h4>공지사항</h4>
-                        <br>
+                        <div style="height: 20px;"></div>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -153,54 +173,33 @@
                     <div style="height: 100px;"></div>
                     
                     <div class="table-responsive" style="text-align: center;">
-                        <br><br>
                         <h4>FAQ</h4>
-      
+                        <div style="height: 20px;"></div>
                         <section class="section section-faq">
                             <div class="container mx-auto">
-                              <div class="faq-box">
-                                <ul>
-                                  <li>
-                                    <div class="faq-box__question"><span>Q. 배송기간은 얼마나 걸리나요?</span></div>
-                                    <div class="faq-box__answer">
-                                      <div>
-                                        - 영업일 기준 오후 1시 이전 결제 완료 주문건 : 
-                                        </div>
-                                      <div>
-                                        <span style="color:red;">당일출고</span>됩니다. (일부상품 제외)
-                                      </div>
-                                      <div>
-                                        - 공휴일의 경우 다음 영업일에 출고됩니다.
-                                      </div>
-                                      <div>
-                                        (출고된 경우 서울/수도권 지역은 대부분 다음날 수령, 지방은 1~3일 이내에 배송됩니다. 따라서 전체 배송 기간은 (업무일 기준) 3일~7일 정도 소요되며, 일부 택배사 사정에 따라 변동될 수 있습니다.)
-                                      </div>
-                                      <div>
-                                        ※ 주문 상품이 재고 부족일 경우 부득이하게 배송 시간은 달라질 수 있는 점 양해 부탁드립니다.
-                                      </div>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="faq-box__question"><span>Q. 고객센터의 상담 시간을 알고 싶어요.</span></div>
-                                    <div class="faq-box__answer">
-                                      <div>
-                                        - 고객센터 전화번호 : 1544-9180
-                                      </div>
-                                      <div>
-                                        - 상담 시간 : 평일 오전 9시 30분 ~ 오후 6시 (점심시간 : 오전 11시 30분 ~ 오후 1시 30분 / 주말, 공휴일 휴무)
-                                      </div>
-                                      <div>
-                                        - 전화 연결이 어려운 경우 카카오 상담톡으로 문의를 남겨주시면 확인 후 정성껏 답변드리겠습니다.
-                                      </div>
-                                      <div>
-                                        ※ 문의량이 많을 경우 상담 연결 및 답변이 지연될 수 있습니다.
-                                      </div>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
+                                <div class="faq-box">
+                                    <ul>
+                                        <li>
+                                            <div class="faq-box__question"><span>Q. 질문 1</span></div>
+                                            <div class="faq-box__answer">
+                                                <div>
+                                                    - 답변 1
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="faq-box__question"><span>Q. 질문 2</span></div>
+                                            <div class="faq-box__answer">
+                                                <div>
+                                                    - 답변 2
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                          </section>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -217,49 +216,37 @@
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">성명</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">이메일</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">연락처</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">기초사양</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        <form method="post" action="submitok.html" name="contactForm">
+                            <table>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                    <label for="name">성명</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                 </div>
-                            </div>
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid">
-                                <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
-                            </div>
+
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <label for="email">이메일</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                    <label for="phone">연락처</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                </div>
+    
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                    <label for="message">기초사양</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                </div>
+
+                                <div class="d-grid">
+                                    <input class="btn btn-primary btn-xl" type="button" onclick="check()" value="제출"  class="btn">
+                                </div>
+                            </table>
                         </form>
                     </div>
                 </div>
@@ -305,6 +292,26 @@
             $('.faq-box__answer').click(function() {
                 return false;
             });
+        }
+
+        FaqBox__init();
+
+        function check() {
+            if (document.contactForm.name.value == "") {
+                alert("이름을 입력해주세요.");
+                return null;
+            } else if (document.contactForm.email.value == "") {
+                alert("이메일을 입력해주세요.");
+                return null;
+            } else if (document.contactForm.phone.value == "") {
+                alert("연락처를 입력해주세요.");
+                return null;
+            } else if (document.contactForm.message.value == "") {
+                alert("기초사양을 입력해주세요.");
+                return null;
+            } else {
+                document.contactForm.submit();
+            }
         }
     </script>
 </html>
