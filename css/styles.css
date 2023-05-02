@@ -11032,3 +11032,12 @@ header.masthead h1, header.masthead .h1 {
 ul {
   list-style: none;
 }
+
+#product_intro a {
+  text-decoration: none;
+  color: black;
+}
+
+.mt-5 {
+  cursor: pointer;
+}

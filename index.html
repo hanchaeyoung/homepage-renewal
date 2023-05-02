@@ -17,16 +17,6 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            #product_intro a {
-                text-decoration: none;
-                color: black;
-            }
-
-            .mt-5 {
-                cursor: pointer;
-            }
-        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -270,48 +260,4 @@
         <!-- 제이쿼리 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </body>
-    <script>
-        // 참고 : https://wiken.io/b/293/2
-        function FaqBox__init() {
-            $('.faq-box > ul > li').click(function() {
-                let $this = $(this);
-                
-                $this.siblings('.hover').find(' > .faq-box__answer').stop().slideUp(300); 
-                $this.siblings('.hover').removeClass('hover');
-                
-                if ( $this.hasClass('hover') ) {
-                $this.find(' > .faq-box__answer').stop().slideUp(300); 
-                $this.removeClass('hover');
-                }
-                else {
-                $this.find(' > .faq-box__answer').stop().slideDown(300); 
-                $this.addClass('hover');
-                }
-            });
-            
-            $('.faq-box__answer').click(function() {
-                return false;
-            });
-        }
-
-        FaqBox__init();
-
-        function check() {
-            if (document.contactForm.name.value == "") {
-                alert("이름을 입력해주세요.");
-                return null;
-            } else if (document.contactForm.email.value == "") {
-                alert("이메일을 입력해주세요.");
-                return null;
-            } else if (document.contactForm.phone.value == "") {
-                alert("연락처를 입력해주세요.");
-                return null;
-            } else if (document.contactForm.message.value == "") {
-                alert("기초사양을 입력해주세요.");
-                return null;
-            } else {
-                document.contactForm.submit();
-            }
-        }
-    </script>
 </html>

@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Creative v7.0.7 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -56,4 +47,47 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+    // 참고 : https://wiken.io/b/293/2
+    function FaqBox__init() {
+        $('.faq-box > ul > li').click(function() {
+            let $this = $(this);
+            
+            $this.siblings('.hover').find(' > .faq-box__answer').stop().slideUp(300); 
+            $this.siblings('.hover').removeClass('hover');
+            
+            if ( $this.hasClass('hover') ) {
+            $this.find(' > .faq-box__answer').stop().slideUp(300); 
+            $this.removeClass('hover');
+            }
+            else {
+            $this.find(' > .faq-box__answer').stop().slideDown(300); 
+            $this.addClass('hover');
+            }
+        });
+        
+        $('.faq-box__answer').click(function() {
+            return false;
+        });
+    }
+    
+    FaqBox__init();
+
 });
+
+function check() {
+    if (document.contactForm.name.value == "") {
+        alert("이름을 입력해주세요.");
+        return null;
+    } else if (document.contactForm.email.value == "") {
+        alert("이메일을 입력해주세요.");
+        return null;
+    } else if (document.contactForm.phone.value == "") {
+        alert("연락처를 입력해주세요.");
+        return null;
+    } else if (document.contactForm.message.value == "") {
+        alert("기초사양을 입력해주세요.");
+        return null;
+    } else {
+        document.contactForm.submit();
+    }
+}
