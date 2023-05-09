@@ -19,209 +19,186 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="/"><img src="assets/img/logo.PNG"></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/#about">회사소개</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#product_intro">제품소개</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#support">고객지원</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#contact">견적문의</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header></header>
 
     <div style="height: 150px;"></div>
 
-    <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
-        <h3>렉장비용 UPS 사양</h3>
-    </div>
-
-    <div class="container" style="text-align: center;">
-        <table class="table table-bordered" style="vertical-align : middle;">
-            <tbody class="text-center">
-                <tr style="background-color: #F4623A; color: white;">
-                    <td colspan="3">구분</td>
-                    <td colspan="5">특성</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">모델</td>
-                    <td colspan="2">타워타입</td>
-                    <td colspan="2">HP910C</td>
-                    <td colspan="2">HP920C</td>
-                    <td colspan="2">HP920C</td>
-                </tr>
-                <tr>
-                    <td colspan="2">렉타입</td>
-                    <td colspan="2">HP910C-RM</td>
-                    <td colspan="2">HP920C-RM</td>
-                    <td colspan="2">HP930C-RM</td>
-                </tr>
-                <tr>
-                    <td colspan="2">용량(VA / Watts)</td>
-                    <td colspan="2">1000/700</td>
-                    <td colspan="2">2000/1400</td>
-                    <td colspan="2">3000/2100</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="4">입력</td>
-                    <td colspan="2">정격 전압</td>
-                    <td colspan="6">220/230/240Vac</td>
-                </tr>
-                <tr>
-                    <td colspan="2">작업 전압 범위</td>
-                    <td colspan="6">110~330Vac</td>
-                </tr>
-                <tr>
-                    <td colspan="2">작업 주파수 범위</td>
-                    <td colspan="6">46~54Hz or 56~64Hz(자동 감지)</td>
-                </tr>
-                <tr>
-                    <td colspan="2">역률</td>
-                    <td colspan="6">0.99</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="5">출력</td>
-                    <td colspan="2">출력 전압</td>
-                    <td colspan="6">220/230/240Vac±1%</td>
-                </tr>
-                <tr>
-                    <td colspan="2">출력 주파수</td>
-                    <td colspan="6">AC 모드에서 공용 전기와 동기화, 배터리 모드에서 50Hz / 60Hz ±0.2%</td>
-                </tr>
-                <tr>
-                    <td colspan="2">고조파 일그러짐(THD)</td>
-                    <td colspan="6"><3%(선형부하)</td>
-                </tr>
-                <tr>
-                    <td colspan="2">파고율</td>
-                    <td colspan="6">3:1 (최대)</td>
-                </tr>
-                <tr>
-                    <td colspan="2">효율</td>
-                    <td colspan="3">86%</td>
-                    <td colspan="3">90%</td>
-                </tr>
-                
-                <tr>
-                    <td rowspan="7">배터리</td>
-                    <td colspan="2">DC 전압</td>
-                    <td colspan="3">36Vdc</td>
-                    <td colspan="3">96Vdc</td>
-                </tr>
-                <tr>
-                    <td colspan="2">배터리 유형 및 수량</td>
-                    <td colspan="3">12V/7Ah x3</td>
-                    <td colspan="3">12V/7Ah x8</td>
-                </tr>
-                <tr>
-                    <td colspan="2">백업 시간 (50% 부하)</td>
-                    <td colspan="2">12min</td>
-                    <td colspan="2">19min</td>
-                    <td colspan="2">16min</td>
-                </tr>
-                <tr>
-                    <td colspan="2">백업 시간 (전체 부하)</td>
-                    <td colspan="2">5min</td>
-                    <td colspan="2">8min</td>
-                    <td colspan="2">5min</td>
-                </tr>
-                <tr>
-                    <td colspan="2" rowspan="3">충전 전류 (표준 장비)</td>
-                    <td colspan="2">1A</td>
-                    <td colspan="4">0.7A</td>
-                </tr>
-
-                <tr>
-                    <td colspan="2">7A</td>
-                    <td colspan="4">6A</td>
-                </tr>
-                <tr>
-                    <td colspan="6">8시간 (최대 용량의 90%까지)</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="5">시스템 특징</td>
-                    <td colspan="2">LCD 표시</td>
-                    <td colspan="6">1. 입력 전압 / 주파수, 배터리 전압, 출력 전압 / 주파수, 부하 와트 / VA 및 퍼센트, 인버터 온도<br>2."라인 모드", "배터리 모드" 또는 "바이 패스 모드"와 같은 작업 모드</td>
-                </tr>
-                <tr>
-                    <td colspan="2">LED 표시</td>
-                    <td colspan="6">1. 정상 작업 그린 2. 경고 상태 3. 이상 작업 빨간색</td>
-                </tr>
-                <tr>
-                    <td colspan="2">과부하 능력</td>
-                    <td colspan="6">1. > 110%, 30초 바이 패스 모드로 전환<br>2. > 150%, 300ms 바이 패스 모드로 전환</td>
-                </tr>
-                <tr>
-                    <td colspan="2">전송 시간</td>
-                    <td colspan="6">AC 모드와 배터리 모드 간 : 0ms<br>AC 모드와 바이 패스 모드 간 : 4ms(일반 값 2.5ms)</td>
-                </tr>
-                <tr>
-                    <td colspan="2">통신 인터페이스</td>
-                    <td colspan="6">RS232;SNMP(옵션)</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="5">환경</td>
-                    <td colspan="2">작업 온도</td>
-                    <td colspan="6">0~40°C</td>
-                </tr>
-                <tr>
-                    <td colspan="2">보관 온도</td>
-                    <td colspan="6">-25~55°C</td>
-                </tr>
-                <tr>
-                    <td colspan="2">습도 범위</td>
-                    <td colspan="6">0%~95% (불응축)</td>
-                </tr>
-                <tr>
-                    <td colspan="2">해발 고도</td>
-                    <td colspan="6"><1500M</td>
-                </tr>
-                <tr>
-                    <td colspan="2">소음 수준</td>
-                    <td colspan="6"><45dB</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="4">외관</td>
-                    <td colspan="2">크기 WxDxH(mm)</td>
-                    <td colspan="2">419x144x215</td>
-                    <td colspan="4">478x191x339</td>
-                </tr>
-                <tr>
-                    <td colspan="2">포장 DxWxH(mm)</td>
-                    <td colspan="2">524x258x334</td>
-                    <td colspan="4">603x332x482</td>
-                </tr>
-                <tr>
-                    <td colspan="2">순량 / 배송 중량(kg) (표준 장비)</td>
-                    <td colspan="2">14/16</td>
-                    <td colspan="2">33/35</td>
-                    <td colspan="2">34/36</td>
-                </tr>
-                <tr>
-                    <td colspan="2">순량 / 배송 중량(kg) (장기 실행 장비)</td>
-                    <td colspan="2">7.5/9</td>
-                    <td colspan="2">14/16</td>
-                    <td colspan="2">15/17</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5">
-            <!-- <div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div> -->
-            <div class="small text-center text-muted"><a href="adminLogin.html">ADMIN</a>&nbsp;&nbsp;&nbsp;&nbsp;대구본사 : 대구광역시 달서구 문화회관 9길 66(장동)&nbsp;&nbsp;&nbsp;&nbsp;본사전화 : 053)744-3897&nbsp;&nbsp;&nbsp;&nbsp;Fax : 742-4658&nbsp;&nbsp;&nbsp;&nbsp;담당자 휴대폰 : 010-8895-9141</div>
+    <div class="container">
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+            <h3>렉장비용 UPS 사양</h3>
         </div>
-    </footer>
+
+        <div class="table-responsive">
+            <table class="table table-bordered" style="vertical-align : middle;">
+                <tbody class="text-center">
+                    <tr style="background-color: #F4623A; color: white;">
+                        <td colspan="3">구분</td>
+                        <td colspan="5">특성</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">모델</td>
+                        <td colspan="2">타워타입</td>
+                        <td colspan="2">HP910C</td>
+                        <td colspan="2">HP920C</td>
+                        <td colspan="2">HP920C</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">렉타입</td>
+                        <td colspan="2">HP910C-RM</td>
+                        <td colspan="2">HP920C-RM</td>
+                        <td colspan="2">HP930C-RM</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">용량(VA / Watts)</td>
+                        <td colspan="2">1000/700</td>
+                        <td colspan="2">2000/1400</td>
+                        <td colspan="2">3000/2100</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">입력</td>
+                        <td colspan="2">정격 전압</td>
+                        <td colspan="6">220/230/240Vac</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">작업 전압 범위</td>
+                        <td colspan="6">110~330Vac</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">작업 주파수 범위</td>
+                        <td colspan="6">46~54Hz or 56~64Hz(자동 감지)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">역률</td>
+                        <td colspan="6">≥0.99</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">출력</td>
+                        <td colspan="2">출력 전압</td>
+                        <td colspan="6">220/230/240Vac±1%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">출력 주파수</td>
+                        <td colspan="6">AC 모드에서 공용 전기와 동기화, 배터리 모드에서 50Hz / 60Hz ±0.2%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">고조파 일그러짐(THD)</td>
+                        <td colspan="6"><3%(선형부하)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">파고율</td>
+                        <td colspan="6">3:1 (최대)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">효율</td>
+                        <td colspan="3">≥86%</td>
+                        <td colspan="3">≥90%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7">배터리</td>
+                        <td colspan="2">DC 전압</td>
+                        <td colspan="3">36Vdc</td>
+                        <td colspan="3">96Vdc</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">배터리 유형 및 수량</td>
+                        <td colspan="3">12V/7Ah x3</td>
+                        <td colspan="3">12V/7Ah x8</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">백업 시간 (50% 부하)</td>
+                        <td colspan="2">12min</td>
+                        <td colspan="2">19min</td>
+                        <td colspan="2">16min</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">백업 시간 (전체 부하)</td>
+                        <td colspan="2">5min</td>
+                        <td colspan="2">8min</td>
+                        <td colspan="2">5min</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="3">충전 전류 (표준 장비)</td>
+                        <td colspan="2">1A</td>
+                        <td colspan="4">0.7A</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">7A</td>
+                        <td colspan="4">6A</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">8시간 (최대 용량의 90%까지)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">시스템 특징</td>
+                        <td colspan="2">LCD 표시</td>
+                        <td colspan="6">1. 입력 전압 / 주파수, 배터리 전압, 출력 전압 / 주파수, 부하 와트 / VA 및 퍼센트, 인버터 온도<br>2."라인 모드", "배터리 모드" 또는 "바이 패스 모드"와 같은 작업 모드</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">LED 표시</td>
+                        <td colspan="6">1. 정상 작업 그린 2. 경고 상태 3. 이상 작업 빨간색</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">과부하 능력</td>
+                        <td colspan="6">1. > 110%, 30초 바이 패스 모드로 전환<br>2. > 150%, 300ms 바이 패스 모드로 전환</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">전송 시간</td>
+                        <td colspan="6">AC 모드와 배터리 모드 간 : 0ms<br>AC 모드와 바이 패스 모드 간 : 4ms(일반 값 2.5ms)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">통신 인터페이스</td>
+                        <td colspan="6">RS232;SNMP(옵션)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">환경</td>
+                        <td colspan="2">작업 온도</td>
+                        <td colspan="6">0~40°C</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">보관 온도</td>
+                        <td colspan="6">-25~55°C</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">습도 범위</td>
+                        <td colspan="6">0%~95% (불응축)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">해발 고도</td>
+                        <td colspan="6"><1500M</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">소음 수준</td>
+                        <td colspan="6"><45dB</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">외관</td>
+                        <td colspan="2">크기 WxDxH(mm)</td>
+                        <td colspan="2">419x144x215</td>
+                        <td colspan="4">478x191x339</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">포장 DxWxH(mm)</td>
+                        <td colspan="2">524x258x334</td>
+                        <td colspan="4">603x332x482</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">순량 / 배송 중량(kg) (표준 장비)</td>
+                        <td colspan="2">14/16</td>
+                        <td colspan="2">33/35</td>
+                        <td colspan="2">34/36</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">순량 / 배송 중량(kg) (장기 실행 장비)</td>
+                        <td colspan="2">7.5/9</td>
+                        <td colspan="2">14/16</td>
+                        <td colspan="2">15/17</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer></footer>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -229,5 +206,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script>
+        const header = document.querySelector('header');
+        const footer = document.querySelector('footer');
+
+        fetch('./header.html')
+        .then(res => res.text())
+        .then(data => header.innerHTML = data);
+
+        fetch('./footer.html')
+        .then(res => res.text())
+        .then(data => footer.innerHTML = data);
+    </script>
 </body>
 </html>

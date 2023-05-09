@@ -88,6 +88,19 @@ function check() {
         alert("기초사양을 입력해주세요.");
         return null;
     } else {
+        alert("견적 문의가 완료되었습니다.")
+        document.contactForm.submit();
+    }
+}
+
+function admincheck() {
+    if (document.contactForm.email.value == "") {
+        alert("이메일을 입력해주세요.");
+        return null;
+    } else if (document.contactForm.password.value == "") {
+        alert("비밀번호를 입력해주세요.");
+        return null;
+    } else {
         document.contactForm.submit();
     }
 }

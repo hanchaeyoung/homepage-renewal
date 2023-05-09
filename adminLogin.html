@@ -26,46 +26,44 @@
             </div>
         </nav>
 
-        <!-- Contact-->
+        <div style="height: 140px;"></div>
+
+
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">관리자 로그인</h2>
+                        <h2 class="mt-0">로그인</h2>
                         <hr class="divider" />
                     </div>
                 </div>
-
-                <div style="height: 50px;"></div>
-
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- email input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="email" data-sb-validations="required" />
-                                <label for="email">이메일</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
+                        <form method="post" action="adminsubmitok.html" name="contactForm">
+                            <table>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <label for="email">이메일</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
 
-                            <div style="height: 30px;"></div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="password" type="password" placeholder="password" data-sb-validations="required" />
+                                    <label for="password">비밀번호</label>
+                                    <div class="invalid-feedback" data-sb-feedback="passowrd:required">A password is required.</div>
+                                </div>
 
-                            <!-- password input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="password" type="password" placeholder="password" data-sb-validations="required,password" />
-                                <label for="password">비밀번호</label>
-                            </div>
-
-                            <div style="height: 30px;"></div>
-
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">로그인</button></div>
+                                <div class="d-grid" style="padding-top: 50px;">
+                                    <input class="btn btn-primary btn-xl" type="button" onclick="admincheck()" value="로그인"  class="btn">
+                                </div>
+                            </table>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        <div style="height: 35px;"></div>
 
         <!-- Footer-->
         <footer class="bg-light py-5">
