@@ -77,19 +77,23 @@ window.addEventListener('DOMContentLoaded', event => {
 function check() {
     if (document.contactForm.name.value == "") {
         alert("이름을 입력해주세요.");
+        document.contactForm.name.focus();
         return null;
     } else if (document.contactForm.email.value == "") {
         alert("이메일을 입력해주세요.");
+        document.contactForm.email.focus();
         return null;
     } else if (document.contactForm.phone.value == "") {
         alert("연락처를 입력해주세요.");
+        document.contactForm.phone.focus();
         return null;
     } else if (document.contactForm.message.value == "") {
         alert("기초사양을 입력해주세요.");
+        document.contactForm.message.focus();
         return null;
     } else {
         alert("견적 문의가 완료되었습니다.")
-        document.contactForm.submit();
+        // document.contactForm.submit();
     }
 }
 

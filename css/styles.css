@@ -11006,27 +11006,28 @@ header.masthead h1, header.masthead .h1 {
 
 
 .faq-box__question {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .faq-box__question::after {
-  content:"▼";
-  float:right;
+  content: "▼";
+  float: right;
 }
 
 .faq-box > ul > li {
-  padding:10px;
+  padding: 10px;
 }
 
 .faq-box > ul > li.hover > .faq-box__question::after {
-  content:"▲";
+  content: "▲";
 }
 
 .faq-box__answer {
-  display:none;
-  background-color: rgba(0, 0, 0, 0.12);
-  border-radius:10px;
-  padding:10px;
+  display: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 ul {
